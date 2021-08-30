@@ -27,11 +27,10 @@ function get(){
     for(let i=0;i<l.length;i++){
         let ck=l[i];
         if(ck.substr(0,ke.length+2)===ke){
-            document.innerHTML=
+            let sh=document.getElementsByClassName("show");
+            sh.innerHTML=
             `
-            <div class="show">
             <p>${ck.substr(ke.length+2)}</p>
-            </div>
             `
         }
     }
