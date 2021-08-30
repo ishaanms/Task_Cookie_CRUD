@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - Cookie</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right,#7F7FD5,#86A8E7,#91EAE4);
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        p{
+            font-size: 40px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;  
+            color: white; 
+        }
+        label{
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif; 
+            color: rgb(247, 169, 0); 
+        }
+        h1{
+            font-family: 'Montserrat', sans-serif;
+            color: whitesmoke;
+        }
+        .first{
+            float:left;
+            width:25%;
+        }
+        .second{
+            float:right;
+            width:75%;
+        }
+        .third{
+            float:right;
+            width:75%;
+        }
+        .get{
+            float:left;
+            width:25%;
+        }
+        .del{
+            float:left;
+            width:50%;
+        }
+        .list{
+            float:right;
+            width:50%;
+        }
+    </style>
+</head>
+<body>
+    <p>COOKIE FUNCTIONS</p>
+    <div class="first">
+        <div class="set">
+            <h1>Set a new cookie</h1><br><br><br>
+            <label>Key</label>
+            <input type="text" id='addkey'></input><br><br>
+            <label>Value</label>
+            <input type="text" id='addval'></input><br><br>
+            <button onclick="add()">ADD</button>
+        </div>
+    </div>
+    <div class="second">
+        <div class="get">
+            <h1>Get value of the cookie</h1><br>
+            <label>Key</label>
+            <input type="text" id='getkey'></input><br><br>
+            <button onclick="get()">GET</button>
+            <div class="show"></div>
+        </div>
+        <div class="third">
+            <div class="del">
+                <h1>Delete the cookie</h1><br><br><br>
+                <label>Key</label>
+                <input type="text" id='delkey'></input><br><br>
+                <button onclick="del()">Delete</button>
+            </div>
+            <div class="list">
+                <h1>List of all cookies</h1>
+                <div class="li"></div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="mainscript.js"></script>
+</body>
+</html>
