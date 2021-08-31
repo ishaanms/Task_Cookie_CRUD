@@ -19,7 +19,7 @@ function get(){
         let ck=l[i];
         alert(ck.substr(0,ke.length));
         alert(ke)
-        if(ck.substr(0,ke.length-1)==ke){
+        if(ck.substr(0,ke.length-1)===ke){
             sh.innerHTML=
             `
             <p>${ck.substr(ke.length+2)}</p>
