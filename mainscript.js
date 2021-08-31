@@ -5,6 +5,7 @@
 function showli(){
     let lis=document.cookie.split(';');
     let listt=document.getElementById("li");
+    listt.innerHTML='';
     for(let l=0;l<lis.length;l++){
         
         listt.innerHTML+=
