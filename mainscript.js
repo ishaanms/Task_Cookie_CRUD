@@ -8,6 +8,7 @@ function add()
     let key=document.getElementById("addkey").value;
     let val=document.getElementById("addval").value;
     document.cookie = key + "=" + val;
+    alert("COOKIE IS ADDED!!")
     showli();
 }
 function get(){
@@ -15,8 +16,8 @@ function get(){
     let l=document.cookie.split(';');
     for(let i=0;i<l.length;i++){
         let ck=l[i];
-        if(ck.substr(0,ke.length+1)===ke){
-            let sh=document.getElementsByClassName("show");
+        if(ck.substr(0,ke.length+1)==ke){
+            let sh=document.getElementById("show");
             sh.innerHTML=
             `
             <p>${ck.substr(ke.length+2)}</p>
@@ -27,6 +28,7 @@ function get(){
 function del(){
     let name=document.getElementById("delkey").value + "=";
     document.cookie = name + '=;max-age=0';
+    alert("COOKIE IS DELETED!!")
     showli();
 }
 function showli(){
