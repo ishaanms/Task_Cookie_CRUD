@@ -4,7 +4,7 @@
 
 function showli(){
     alert('showli works')
-    let lis=document.cookie.split();
+    let lis=document.cookie.split(';');
     for(let l=0;l<lis.length;l++){
         document.innerHTML+=
         `
@@ -23,7 +23,7 @@ function add()
 }
 function get(){
     let ke=document.getElementById("getkey").value + "=";
-    let l=document.cookie.split();
+    let l=document.cookie.split(';');
     for(let i=0;i<l.length;i++){
         let ck=l[i];
         if(ck.substr(0,ke.length+2)===ke){
@@ -37,7 +37,7 @@ function get(){
 }
 function del(){
     let name=document.getElementById("delkey").value + "=";
-    let l=document.cookie.split();
+    let l=document.cookie.split(';');
     for(let i=0;i<l.length;i++){
         let ck=l[i];
         if(ck.substr(0,name.length+2)===name){
