@@ -31,6 +31,7 @@ function del(){
 }
 function showli(){
     let lis=document.cookie.split(';');
+    alert(document.cookie);
     let listt=document.getElementById("li");
     listt.innerHTML='';
     for(let l=0;l<lis.length;l++){
