@@ -26,7 +26,7 @@ function get(){
     let l=document.cookie.split(';');
     for(let i=0;i<l.length;i++){
         let ck=l[i];
-        if(ck.substr(0,ke.length+2)===ke){
+        if(ck.substr(0,ke.length+1)===ke){
             let sh=document.getElementsByClassName("show");
             sh.innerHTML=
             `
