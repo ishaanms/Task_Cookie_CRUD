@@ -37,11 +37,7 @@ function get(){
 }
 function del(){
     let name=document.getElementById("delkey").value + "=";
-    let l=document.cookie.split(';');
-    for(let i=0;i<l.length;i++){
-        let ck=l[i];
-        if(ck.substr(0,name.length+2)===name){
-            document.cookie=name+";max-age=0";
+    document.cookie = name + '=;max-age=0';
         }
     }
     showli();
