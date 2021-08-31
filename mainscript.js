@@ -38,7 +38,5 @@ function get(){
 function del(){
     let name=document.getElementById("delkey").value + "=";
     document.cookie = name + '=;max-age=0';
-        }
-    }
     showli();
 }
