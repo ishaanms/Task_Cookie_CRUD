@@ -17,7 +17,8 @@ function get(){
     let sh=document.getElementById("show");
     for(let i=0;i<l.length;i++){
         let ck=l[i];
-        alert(ck);
+        alert(ck.substr(0,ke.length));
+        alert(ke)
         if(ck.substr(0,ke.length-1)==ke){
             sh.innerHTML=
             `
