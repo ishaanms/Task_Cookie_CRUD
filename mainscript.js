@@ -37,7 +37,7 @@ function get(){
         c = c.substring(1);
         }
         if (c.indexOf(name) == 0) {
-        sh.innerHTML=` ${c.substring(name.length, c.length)}`;
+        sh.innerHTML=` <p>${c.substring(name.length, c.length)}</p>`;
         }
     }
 //     return "";
