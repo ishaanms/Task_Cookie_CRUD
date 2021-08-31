@@ -12,12 +12,12 @@ function add()
     showli();
 }
 function get(){
-    let ke=document.getElementById("getkey").value + "=";
+    let ke=document.getElementById("getkey").value;
     let l=document.cookie.split(';');
+    let sh=document.getElementById("show");
     for(let i=0;i<l.length;i++){
         let ck=l[i];
-        if(ck.substr(0,ke.length+1)==ke){
-            let sh=document.getElementById("show");
+        if(ck.substr(0,ke.length-1)==ke){
             sh.innerHTML=
             `
             <p>${ck.substr(ke.length+2)}</p>
@@ -33,7 +33,6 @@ function del(){
 }
 function showli(){
     let lis=document.cookie.split(';');
-    alert(document.cookie);
     let listt=document.getElementById("li");
     listt.innerHTML='';
     for(let l=0;l<lis.length;l++){
