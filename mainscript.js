@@ -3,14 +3,13 @@
 // let delvalu=document.getElementById("delkey")
 
 function showli(){
-    alert('showli works')
     let lis=document.cookie.split(';');
+    let listt=document.getElementsById("li");
     for(let l=0;l<lis.length;l++){
-        document.innerHTML+=
+        
+        listt.innerHTML+=
         `
-        <div class="li">
         <p>${lis[l]} </p>
-        <div>
         `;
     }
 }
